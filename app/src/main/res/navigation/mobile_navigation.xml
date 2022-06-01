@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_itinerary">
+
+    <fragment
+        android:id="@+id/nav_itinerary"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.itinerary.ItineraryFragment"
+        android:label="@string/menu_itinerary"
+        tools:layout="@layout/fragment_itinerary" />
+
+    <fragment
+        android:id="@+id/nav_service"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.service.ServiceFragment"
+        android:label="@string/menu_service"
+        tools:layout="@layout/fragment_service" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.setting.SettingFragment"
+        android:label="@string/menu_setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_incident"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.setting.SettingFragment"
+        android:label="@string/menu_incident"
+        tools:layout="@layout/fragment_incident" />
+
+    <fragment
+        android:id="@+id/nav_about_us"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.setting.SettingFragment"
+        android:label="@string/menu_about_us"
+        tools:layout="@layout/fragment_about_us" />
+</navigation>

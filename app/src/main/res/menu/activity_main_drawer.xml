@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_itinerary"
+            android:icon="@drawable/ic_route_solid"
+            android:title="@string/menu_itinerary" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/ic_bus_simple_solid"
+            android:title="@string/menu_service" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_gear_solid"
+            android:title="@string/menu_setting" />
+        <item
+            android:id="@+id/nav_incident"
+            android:icon="@drawable/ic_triangle_exclamation_solid"
+            android:title="@string/menu_incident" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_circle_info_solid"
+            android:title="@string/menu_about_us" />
+    </group>
+</menu>
