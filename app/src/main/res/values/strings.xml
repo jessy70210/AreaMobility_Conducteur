@@ -12,8 +12,8 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_profile_identity">Danielle Durpoix</string>
+    <string name="nav_header_service_status">Service en cours</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Paramètres</string>
 
@@ -24,4 +24,8 @@
     <string name="menu_about_us">A propos</string>
     <string name="menu_see_profit">Voir le profile</string>
     <string name="menu_update">Mise à jour</string>
+
+    <string name="btn_start_gps">Lancer le GPS</string>
+    
+    <string name="lib_location_itinerary">Vous être à</string>
 </resources>
