@@ -27,5 +27,11 @@
 
     <string name="btn_start_gps">Lancer le GPS</string>
     
-    <string name="lib_location_itinerary">Vous être à</string>
+    <string name="lib_location_itinerary">Vous êtes à</string>
+    <string name="lib_android_auto_maps">Maps/Android Auto</string>
+    <string name="lib_apple_car_plan">Plan/Apple Car</string>
+    <string name="lib_waze">Waze</string>
+    <string name="lib_sygic">Sygic</string>
+    <string name="lib_unavailable">Indisponible</string>
+    <string name="lib_download">Télécharger</string>
 </resources>

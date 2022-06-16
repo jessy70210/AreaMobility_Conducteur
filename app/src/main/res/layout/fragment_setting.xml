@@ -6,17 +6,145 @@
     android:layout_height="match_parent"
     tools:context=".ui.general.setting.SettingFragment">
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:id="@+id/text_slideshow"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:layout_marginEnd="8dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textSize="40sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
+            <ImageView
+                android:id="@+id/image_google_maps"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_andoid_auto" />
+
+            <TextView
+                android:id="@+id/tv_google_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lib_android_auto_maps"
+                app:layout_constraintBottom_toBottomOf="@+id/image_google_maps"
+                app:layout_constraintEnd_toStartOf="@+id/s_google_maps"
+                app:layout_constraintStart_toEndOf="@+id/image_google_maps"
+                app:layout_constraintTop_toTopOf="@+id/image_google_maps" />
+
+            <Switch
+                android:id="@+id/s_google_maps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_google_maps"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_google_maps"
+                app:layout_constraintVertical_bias="0.518" />
+
+            <ImageView
+                android:id="@+id/image_apple_car"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_google_maps"
+                app:srcCompat="@drawable/ic_car_play" />
+
+            <TextView
+                android:id="@+id/tv_apple_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lib_apple_car_plan"
+                app:layout_constraintBottom_toBottomOf="@+id/image_apple_car"
+                app:layout_constraintEnd_toStartOf="@+id/s_apple_car"
+                app:layout_constraintStart_toEndOf="@+id/image_apple_car"
+                app:layout_constraintTop_toTopOf="@+id/image_apple_car" />
+
+            <Switch
+                android:id="@+id/s_apple_car"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_apple_car"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_apple_car"
+                app:layout_constraintVertical_bias="0.518" />
+
+            <ImageView
+                android:id="@+id/image_waze"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_apple_car"
+                app:srcCompat="@drawable/ic_waze" />
+
+            <TextView
+                android:id="@+id/tv_waze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lib_waze"
+                app:layout_constraintBottom_toBottomOf="@+id/image_waze"
+                app:layout_constraintEnd_toStartOf="@+id/s_waze"
+                app:layout_constraintStart_toEndOf="@+id/image_waze"
+                app:layout_constraintTop_toTopOf="@+id/image_waze" />
+
+            <Switch
+                android:id="@+id/s_waze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_waze"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_waze"
+                app:layout_constraintVertical_bias="0.518" />
+
+            <ImageView
+                android:id="@+id/image_sygic"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="16dp"
+                android:paddingTop="@dimen/nav_header_vertical_spacing"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/image_waze"
+                app:srcCompat="@drawable/ic_sygic" />
+
+            <TextView
+                android:id="@+id/tv_sygic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lib_sygic"
+                app:layout_constraintBottom_toBottomOf="@+id/image_sygic"
+                app:layout_constraintEnd_toStartOf="@+id/s_sygic"
+                app:layout_constraintStart_toEndOf="@+id/image_sygic"
+                app:layout_constraintTop_toTopOf="@+id/image_sygic" />
+
+            <Switch
+                android:id="@+id/s_sygic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_sygic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_sygic"
+                app:layout_constraintVertical_bias="0.518" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

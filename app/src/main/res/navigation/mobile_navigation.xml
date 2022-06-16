@@ -25,13 +25,13 @@
 
     <fragment
         android:id="@+id/nav_incident"
-        android:name="fr.ensim.areamobility.conducteur.ui.general.setting.SettingFragment"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.incident.IncidentFragment"
         android:label="@string/menu_incident"
         tools:layout="@layout/fragment_incident" />
 
     <fragment
         android:id="@+id/nav_about_us"
-        android:name="fr.ensim.areamobility.conducteur.ui.general.setting.SettingFragment"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.about_us.AboutUsFragment"
         android:label="@string/menu_about_us"
         tools:layout="@layout/fragment_about_us" />
 </navigation>
