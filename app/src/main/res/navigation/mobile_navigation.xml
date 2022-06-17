@@ -27,7 +27,21 @@
         android:id="@+id/nav_incident"
         android:name="fr.ensim.areamobility.conducteur.ui.general.incident.IncidentFragment"
         android:label="@string/menu_incident"
-        tools:layout="@layout/fragment_incident" />
+        tools:layout="@layout/fragment_incident" >
+        <action
+            android:id="@+id/action_nav_incident_to_nav_emergency"
+            app:destination="@id/nav_emergency" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_emergency"
+        android:name="fr.ensim.areamobility.conducteur.ui.general.incident.emergency.EmergencyFragment"
+        android:label="@string/menu_incident"
+        tools:layout="@layout/fragment_emergency" >
+        <action
+            android:id="@+id/action_nav_emergency_to_nav_incident"
+            app:destination="@id/nav_incident" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_about_us"

@@ -6,8 +6,8 @@
     <string name="action_sign_in">Connexion</string>
     <string name="action_sign_in_short">Connexion</string>
     <string name="welcome">"Bienvenu !"</string>
-    <string name="invalid_username">"Ce n'est pas un nom d'utilisateur valide"</string>
-    <string name="invalid_password">The password must contain more than 5 characters</string>
+    <string name="invalid_username">"Ce n'est pas un email valide"</string>
+    <string name="invalid_password">Le mot de passe n\'est pas valide</string>
     <string name="login_failed">"La connexion a échoué"</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -34,4 +34,18 @@
     <string name="lib_sygic">Sygic</string>
     <string name="lib_unavailable">Indisponible</string>
     <string name="lib_download">Télécharger</string>
+    <string name="lib_slide_emergency">Appler d\'urgence au manager</string>
+    <string name="lib_slide_distress">Envoyer un signe de detresse</string>
+    <string name="lib_slide_distress_finish">Tout est rentré dans l\'ordre</string>
+    <string name="lib_titile_emergency">Risque mineur</string>
+    <string name="lib_titile_distress">Message d\'urgence</string>
+    <string name="lib_titile_distress_active">Signal de detresse activé</string>
+    <string name="lib_text_emergency">Tout déplacement, si banal soit-il, à pied ou à bord d’un véhicule, expose le salarié à des risques : collisions, accidents de la route, mal de dos (conduite d’un véhicule), heurt, glissade ou entorse (circulation à pied). L’employeur doit prendre en compte ces risques et mettre en place une organisation du travail qui permette de rationaliser et de sécuriser les déplacements à l’intérieur et à l’extérieur de l’entreprise.</string>
+    <string name="lib_text_distress">Permet de contacte automatiquement les services d’urgence locaux et partage votre position avec eux. A utilisé si une vie humaine est en danger, ou qu\'il y a un problème grave à bord.</string>
+
+    <string name="lib_info_app">Le Transport à la Demande dynamique se déploient progressivement dans le monde et dans l’hexagone. ils promettent une meilleure expérience client et une gestion plus performante des services.</string>
+    <string name="lib_url_about_us"><a href="https://www.google.com">En savoir plus</a></string>
+    <string name="lib_email_question"><a href="mailto:Jessy.Lebrun.Etu@univ-lemans.fr">Envoyez nous un email</a></string>
+    <string name="lib_titile_question">Avez-vous une question ?\ </string>
+    <string name="legal_mention"><a href="https://www.google.com">Mentions légales</a></string>
 </resources>
