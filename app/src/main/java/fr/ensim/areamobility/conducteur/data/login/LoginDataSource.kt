@@ -1,34 +1,19 @@
 package fr.ensim.areamobility.conducteur.data.login
 
-import fr.ensim.areamobility.conducteur.data.login.model.LoggedInUser
-import java.io.IOException
-import java.io.InputStream
 
-
-import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.util.Log.d
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
-import android.widget.Toast
-import org.json.JSONArray
-import org.json.JSONObject
-import java.io.*
-import java.lang.Exception
-import java.sql.Types.NULL
-import androidx.core.app.ComponentActivity.ExtraData
-import androidx.core.content.ContextCompat.getSystemService
-import android.icu.lang.UCharacter.GraphemeClusterBreak.T
 import android.os.Handler
 import android.os.Looper
 import android.util.Log
+import android.util.Log.d
 import com.google.gson.Gson
 import fr.ensim.areamobility.conducteur.data.login.model.DataSearchUser
+import fr.ensim.areamobility.conducteur.data.login.model.LoggedInUser
+import fr.ensim.areamobility.conducteur.service.UserService
+import fr.ensim.areamobility.conducteur.tools.Hash
 import okhttp3.*
+import java.io.*
 import java.net.URLEncoder
-import java.nio.channels.AsynchronousFileChannel.open
-import java.nio.channels.FileChannel.open
+
 
 /**
  * Class that handles authentication w/ login credentials and retrieves user information.
@@ -67,12 +52,12 @@ class LoginDataSource {
 //            })
 //            var json : String? = assets.open(fileName).bufferedReader().use { it.readText() }
 
-            var user: LoggedInUser;
-            if (username == "daniele.durpoix@gmail.com" && password == "ensim1995") {
-                user = LoggedInUser(java.util.UUID.randomUUID().toString(), "Daniele Durpoix")
-            }else return Result.Error(Exception("Identification failure"))
-
-            return Result.Success(user)
+            for (user in UserService.Users) {
+                if (user.email == username && user.password == Hash.md5(password)){
+                    return Result.Success(LoggedInUser(java.util.UUID.randomUUID().toString() ,user))
+                }
+            }
+            return Result.Error(Exception("Identification failure"))
         } catch (e: Throwable) {
             return Result.Error(IOException("Error logging in", e))
         }

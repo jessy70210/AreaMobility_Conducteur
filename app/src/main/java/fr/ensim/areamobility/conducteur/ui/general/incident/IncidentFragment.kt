@@ -45,7 +45,7 @@ class IncidentFragment : Fragment() {
 
         binding.slidetoactProblem.onSlideCompleteListener = object : SlideToActView.OnSlideCompleteListener {
             override fun onSlideComplete(view: SlideToActView) {
-                TODO("Not yet implemented")
+
             }
 
         }

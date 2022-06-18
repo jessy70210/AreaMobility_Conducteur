@@ -48,4 +48,5 @@
     <string name="lib_email_question"><a href="mailto:Jessy.Lebrun.Etu@univ-lemans.fr">Envoyez nous un email</a></string>
     <string name="lib_titile_question">Avez-vous une question ?\ </string>
     <string name="legal_mention"><a href="https://www.google.com">Mentions légales</a></string>
+    <string name="todo">TODO</string>
 </resources>

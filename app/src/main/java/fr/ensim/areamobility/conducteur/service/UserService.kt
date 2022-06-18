@@ -38,6 +38,14 @@ class UserService {
                 "Kevin.Zemsi.Etu@univ-lemans.fr",
                 Hash.md5("Kevin"),
                 TypeProfile.TRAVELER
+            ),
+            User(
+                4,
+                "Daniele",
+                "Durpoix",
+                "daniele.durpoix@gmail.com",
+                Hash.md5("ensim1995"),
+                TypeProfile.DRIVER
             )
         )
     }
